@@ -1,7 +1,7 @@
 /* 
  * INF559 Data Lab 
  * 
- * <Please put your name and userid here>
+ * <LASSERRE Claire>
  * 
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
@@ -150,7 +150,7 @@ NOTES:
  *   Rating: 1
  */
 int isZero(int x) {
-  return 2;
+  return !x;
 }
 /* 
  * bitNor - ~(x|y) using only ~ and & 
@@ -160,7 +160,7 @@ int isZero(int x) {
  *   Rating: 1
  */
 int bitNor(int x, int y) {
-  return 2;
+  return (~x&~y);
 }
 /* 
  * upperBits - pads n upper bits with 1's
@@ -171,7 +171,12 @@ int bitNor(int x, int y) {
  *  Rating: 1
  */
 int upperBits(int n) {
-  return 2;
+  int x = 1;
+  x=x<<(31);
+  x=x>>n;
+  x=x<<1;
+  return x;
+
 }
 /* 
  * copyLSB - set all bits of result to least significant bit of x
@@ -276,5 +281,9 @@ int isPositive(int x) {
  *   Rating: 4
  */
 int satAdd(int x, int y) {
+  /*bonjour enregistre*/
   return 2;
 }
+
+
+
